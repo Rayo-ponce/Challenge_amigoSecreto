@@ -6,9 +6,15 @@ function agregarAmigo() {
     let amigoAgregado = document.getElementById('amigo').value;
     console.log(amigoAgregado);
 
-    if (amigoAgregado = ''){
-        alert("Por favor, inserte un nombre");
-    }else{
-        amigos.push(amigoAgregado);
-    }
+ if ( amigoAgregado == '') {
+    alert("Por favor, inserte un nombre");
+ } else {
+    amigos.push(amigoAgregado);
+    limpiarCaja();
+ }
 }
+
+function limpiarCaja(){
+    document.getElementById('amigo').value = '';
+}
+
