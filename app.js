@@ -10,6 +10,7 @@ function agregarAmigo() {
     alert("Por favor, inserte un nombre");
  } else {
     amigos.push(amigoAgregado);
+    actualizarLista();
     limpiarCaja();
  }
 }
@@ -18,3 +19,14 @@ function limpiarCaja(){
     document.getElementById('amigo').value = '';
 }
 
+function actualizarLista() {
+   
+   let lista =  document.getElementById('listaAmigos');
+   for (let i = 0; i < amigos.length; i++ ){
+      let nombre =  document.createElement('li');
+      nombre.innerHTML = amigos[i];
+      lista.appendChild(nombre);
+   }
+   //lista.innerHTML = "";
+      
+}
