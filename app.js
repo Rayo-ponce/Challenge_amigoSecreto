@@ -37,7 +37,7 @@ function sortearAmigo() {
    if ( amigos == ""){
       alert("Por favor, inserte un nombre");
    } else {
-      let amigoSorteado = amigos[numeroSorteado] 
+      let amigoSorteado = amigos[numeroSorteado]; 
       let resultado = document.getElementById('resultado');
       resultado.innerHTML = `El amigo secreto sorteado es:${amigoSorteado}`;
    }
