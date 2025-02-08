@@ -40,7 +40,7 @@ function sortearAmigo() {
       let amigoSorteado = amigos[numeroSorteado]; 
       let resultado = document.getElementById('resultado');
       resultado.innerHTML = `El amigo secreto sorteado es:${amigoSorteado}`;
-   }
+      }
    return;
 }
  
