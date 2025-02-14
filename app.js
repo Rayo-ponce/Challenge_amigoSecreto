@@ -24,9 +24,9 @@ function actualizarLista() {
    let lista =  document.getElementById('listaAmigos');
    lista.innerHTML = "";
    for (let i = 0; i < amigos.length; i++ ){
-      let nombre =  document.createElement('li');
-      nombre.innerHTML = amigos[i];
-      lista.appendChild(nombre);
+      let nombre =  document.createElement('li'); //la variable almacena el elemento creado li
+      nombre.innerHTML = amigos[i]; //queremos que en el elemento creado (li) se muestre el nombre del amigo
+      lista.appendChild(nombre); //inserta el nombre del amigo en la lista
       console.log(lista);
    }
    return;
